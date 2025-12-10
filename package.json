@@ -1,0 +1,27 @@
+{
+  "name": "plywrightonnovember",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:lambdatest": "cross-env ENV=lambdatest npx playwright test --project=chromium",
+    "test:naveen": "cross-env ENV=naveen npx playwright test --project=GoogleChrome --debug",
+    "test:flipkart": "cross-env ENV=flipkart npx playwright test --project=chromium",
+    "test:rahulShetty": "cross-env ENV=rahulShetty npx playwright test --project=chromium",
+    "test:codeGen": "npx playwright codegen <website url>"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0",
+    "cross-env": "^10.1.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "exceljs": "^4.4.0"
+  }
+}
