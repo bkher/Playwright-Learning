@@ -1,0 +1,59 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="24.244031">
+<testsuite name="APIs\downloadUpload.spec.ts" timestamp="2025-12-02T12:04:51.560Z" hostname="chromium" tests="1" failures="1" skipped="0" time="20.379" errors="0">
+<testcase name="download and upload file › download and upload file" classname="APIs\downloadUpload.spec.ts" time="20.379">
+<failure message="downloadUpload.spec.ts:6:10 download and upload file" type="FAILURE">
+<![CDATA[  [chromium] › APIs\downloadUpload.spec.ts:6:10 › download and upload file › download and upload file 
+
+    Error: File not found: testData/download.xlsx
+
+       at ..\lib\ExcelUtils.ts:42
+
+      40 |   async readExcel(filePath: string, sheetName: string) {
+      41 |     const workbook = new ExcelJS.Workbook();
+    > 42 |     await workbook.xlsx.readFile(filePath);
+         |     ^
+      43 |
+      44 |     const sheet = workbook.getWorksheet(sheetName);
+      45 |     const rowData: any[] = [];
+        at XLSX.readFile (E:\PlywrightOnNovember\node_modules\exceljs\lib\xlsx\xlsx.js:51:13)
+        at ExcelUtils.readExcel (E:\PlywrightOnNovember\lib\ExcelUtils.ts:42:5)
+        at downloadUploadPage.downloadFile (E:\PlywrightOnNovember\pages\downloadUploadPage.ts:30:9)
+        at E:\PlywrightOnNovember\tests\APIs\downloadUpload.spec.ts:8:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[🌐 Navigating to: http://rahulshettyacademy.com/upload-download-test/index.html
+🔍 Validating final URL...
+✅ Navigation + URL validation completed.
+⏳ Waiting for 15000 ms
+
+[[ATTACHMENT|test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\APIs-downloadUpload-downlo-80b71-le-download-and-upload-file-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
